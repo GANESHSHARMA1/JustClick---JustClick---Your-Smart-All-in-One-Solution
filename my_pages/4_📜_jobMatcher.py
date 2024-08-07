@@ -16,7 +16,7 @@ from pymongo.server_api import ServerApi
 # MongoDB connection details
 @st.cache_resource
 def get_mongo_client():
-    uri = "mongodb+srv://GaneshKithana:iyES7TdrvmkuFxJ@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
+    uri = "mongodb+srv://<Username>:<Password>@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
     client = MongoClient(uri, server_api=ServerApi('1'))
     return client
 
