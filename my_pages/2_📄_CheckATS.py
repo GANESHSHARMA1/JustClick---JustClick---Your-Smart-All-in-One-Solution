@@ -150,7 +150,7 @@ st.write("Click any button that satisfies your dream job role or enter job descr
 @st.cache_resource
 def initial_connection():
     # uri = os.getenv("MONGODB_URI")
-    uri="mongodb+srv://GaneshKithana:iyES7TdrvmkuFxJ@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
+    uri="mongodb+srv://<Username>:<Password>@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
     return MongoClient(uri, server_api=ServerApi('1'))
 
 with st.spinner('Connecting to ATS server to personalize your result...'):
