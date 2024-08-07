@@ -9,7 +9,7 @@ if "role" not in st.session_state:
 ROLES = [None, "User", "Admin"]
 
 def get_mongo_client():
-    uri = "mongodb+srv://GaneshKithana:iyES7TdrvmkuFxJ@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
+    uri = "mongodb+srv://<Username>:<Password>@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
     client = MongoClient(uri, server_api=pymongo.server_api.ServerApi('1'))
     return client
 
