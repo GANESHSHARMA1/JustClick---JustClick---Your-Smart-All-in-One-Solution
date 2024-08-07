@@ -9,7 +9,7 @@ st.title("Job Openings")
 @st.cache_resource
 def get_mongo_client():
     with st.spinner("Finding the open job roles..."):
-        uri = "mongodb+srv://GaneshKithana:iyES7TdrvmkuFxJ@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
+        uri = "mongodb+srv://<Username>:<Password>@justclick.ps3ayrm.mongodb.net/test?appName=JustClick"
         client = MongoClient(uri, server_api=ServerApi('1'))
         return client
 
